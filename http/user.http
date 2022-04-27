@@ -1,0 +1,46 @@
+GET HTTP://localhost:3000
+###
+
+POST HTTP://localhost:3000/login
+Content-Type: application/json
+
+{
+  "email": "ivan@msn.com",
+  "password": "123456"
+}
+###
+
+DELETE HTTP://localhost:3000/logout
+Content-Type: application/json
+Authorization: 6234d17878fbdf487871e34fbea80d8f
+###
+
+POST HTTP://localhost:3000/register
+Content-Type: application/json
+Authorization: f787fec64e7cb83b7b02863f6d109072
+
+{
+  "email": "jo@msn.com",
+  "password": "123456",
+  "profileId": 1,
+  "name": "Joelma"
+}
+###
+
+GET HTTP://localhost:3000/user/5
+Content-Type: application/json
+Authorization: 08ec34869c3b786551ac9c2637d1b213
+
+###
+
+PUT HTTP://localhost:3000/user/4
+Content-Type: application/json
+Authorization: 7c330bc364f7b19ccb52da638883f5bc
+
+{
+  "name": "Ivan Augusto Quevedo Oliveira",
+  "email": "ivan@msn.com",
+  "profileId": "1",
+  "createdAt": "2022-04-26T18:56:44.668Z",
+  "updatedAt": "2022-04-26T18:56:44.668Z"
+}
